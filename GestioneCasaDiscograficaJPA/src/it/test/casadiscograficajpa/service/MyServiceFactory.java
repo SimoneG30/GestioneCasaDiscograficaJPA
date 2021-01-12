@@ -1,6 +1,12 @@
 package it.test.casadiscograficajpa.service;
 
 import it.test.casadiscograficajpa.dao.MyDaoFactory;
+import it.test.casadiscograficajpa.service.autore.AutoreService;
+import it.test.casadiscograficajpa.service.autore.AutoreServiceImpl;
+import it.test.casadiscograficajpa.service.casadiscografica.CasaDiscograficaService;
+import it.test.casadiscograficajpa.service.casadiscografica.CasaDiscograficaServiceImpl;
+import it.test.casadiscograficajpa.service.cd.CdService;
+import it.test.casadiscograficajpa.service.cd.CdServiceImpl;
 
 public class MyServiceFactory {
 
