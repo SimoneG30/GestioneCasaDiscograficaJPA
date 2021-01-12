@@ -4,8 +4,9 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="casa_discografica_jpa_unit" transaction-type="RESOURCE_LOCAL">
-		<class>it.prova.municipioAbitanteJPA.model.Abitante</class>
-		<class>it.prova.municipioAbitanteJPA.model.Municipio</class>
+		<class>it.prova.municipioAbitanteJPA.model.Autore</class>
+		<class>it.prova.municipioAbitanteJPA.model.CasaDiscografica</class>
+		<class>it.prova.municipioAbitanteJPA.model.Cd</class>
 		<properties>
 			<!-- setup con MySql -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
@@ -26,7 +27,7 @@
 			<property name="hibernate.connection.pool_size" value="10"/>
 			<property name="hibernate.show_sql" value="true"/>
 			<!-- create-drop,create,update,validate -->
-			<property name="hibernate.hbm2ddl.auto" value=""/>
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
 		</properties>
 	</persistence-unit>
 </persistence>

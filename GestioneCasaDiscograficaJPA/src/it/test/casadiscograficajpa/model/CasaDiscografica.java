@@ -25,7 +25,7 @@ public class CasaDiscografica {
 		@Column(name = "partitaiva")		
 		private String partitaIva;
 		@OneToMany(fetch = FetchType.LAZY, mappedBy = "autore")
-		private Set<Autore> listaAutori = new HashSet<>();
+		private Set<Autore> autori = new HashSet<>();
 		
 		public CasaDiscografica() {
 			
@@ -62,11 +62,11 @@ public class CasaDiscografica {
 		}
 
 		public Set<Autore> getListaAutori() {
-			return listaAutori;
+			return autori;
 		}
 
-		public void setListaAutori(Set<Autore> listaAutori) {
-			this.listaAutori = listaAutori;
+		public void setListaAutori(Set<Autore> autori) {
+			this.autori = autori;
 		}
 
 		@Override

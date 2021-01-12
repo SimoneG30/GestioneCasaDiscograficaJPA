@@ -33,6 +33,16 @@ public class Cd {
 
 	}
 
+
+	public Cd(String titolo, String genere, int tracce) {
+		super();
+		this.titolo = titolo;
+		this.genere = genere;
+		this.tracce = tracce;
+	}
+
+
+
 	public Long getIdCd() {
 		return idCd;
 	}
